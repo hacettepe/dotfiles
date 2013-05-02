@@ -10,6 +10,7 @@ set fish_path $HOME/.oh-my-fish
 # Example format: set fish_plugins autojump bundler
 
 set fish_plugins git rvm
+set fish_greeting ""
 
 # Path to your custom folder (default path is $FISH/custom)
 set fish_custom $HOME/.config/fish/custom
