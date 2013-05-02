@@ -9,6 +9,3 @@ function ynci		-d "-S noconfirm"
 	set arg $argv[1]
 	yaourt -S $arg --noconfirm
 end
-
-alias mysql="/opt/lampp/bin/mysql"
-alias mysqldump="/opt/lampp/bin/mysqldump"

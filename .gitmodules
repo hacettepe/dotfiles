@@ -1,6 +1,6 @@
-[submodule "shell/fish/submodules/oh-my-fish"]
-	path = shell/fish/submodules/oh-my-fish
+[submodule "shell/fish/submodules/.oh-my-fish"]
+	path = shell/fish/submodules/.oh-my-fish
 	url = git://github.com/bpinto/oh-my-fish.git
-[submodule "shell/zsh/submodules/oh-my-zsh"]
-	path = shell/zsh/submodules/oh-my-zsh
+[submodule "shell/zsh/submodules/.oh-my-zsh"]
+	path = shell/zsh/submodules/.oh-my-zsh
 	url = git://github.com/robbyrussell/oh-my-zsh.git
