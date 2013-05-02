@@ -1,0 +1,13 @@
+function mfs
+	set host $argv[1]
+	set mpoint $argv[2];
+	set port 22;
+
+	set volname (basename $mpoint)
+
+	sshfs -p $port $host $mpoint -oauto_cache,reconnect -o Ciphers=arcfour
+end
+
+function fish_title
+	echo (prompt_pwd)
+end

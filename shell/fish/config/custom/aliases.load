@@ -1,0 +1,11 @@
+alias cls="clear"
+alias la='ls -Al'
+alias rdesktop='rdesktop -g 90%'
+
+alias alpi_haste="HASTE_SERVER=http://paste.elhan.org haste"
+
+alias lls='ls'
+
+function lsl
+	 ls -l (find (pwd) -maxdepth 1 -type l -print)
+end
