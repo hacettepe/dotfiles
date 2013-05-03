@@ -8,10 +8,6 @@ function mfs
 	sshfs -p $port $host $mpoint -oauto_cache,reconnect -o Ciphers=arcfour
 end
 
-function fish_title
-	echo (prompt_pwd)
-end
-
 function lsl
 	 ls -l (find (pwd) -maxdepth 1 -type l -print)
 end
