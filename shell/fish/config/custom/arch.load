@@ -1,11 +1,14 @@
 # searches and doesnt confirm when installing selected package
-function ync 		-d "search noconfirm"
+function ync -d "search noconfirm"
 	set arg $argv[1]
   yaourt $arg --noconfirm
 end
 
 # directly installs given package without confirming
-function ynci		-d "-S noconfirm"
+function ynci -d "-S noconfirm"
 	set arg $argv[1]
 	yaourt -S $arg --noconfirm
 end
+
+alias lmysql="/opt/lampp/bin/mysql"
+alias lmysqldump="/opt/lampp/bin/mysqldump"
