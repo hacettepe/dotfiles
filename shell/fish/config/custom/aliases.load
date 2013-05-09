@@ -1,7 +1,11 @@
 alias cls="clear"
-alias la='ls -Al'
-alias rdesktop='rdesktop -g 90%'
 
 alias haste="HASTE_SERVER=http://paste.elhan.org haste"
 
 alias lls='ls'
+alias o='gnome-open'
+alias subl='/opt/sublime_text_3/sublime_text'
+alias ...='../../'
+alias psg="ps aux | grep"
+alias pu='pushd'
+alias po='popd'
