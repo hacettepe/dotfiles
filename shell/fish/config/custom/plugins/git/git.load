@@ -28,8 +28,8 @@ alias gsd='git svn dcommit'
 
 alias gls='git show'
 
-function __fish_git_list_commits
+function __fish_git_complete_commits
     git log --pretty=format:%h\t%s -20
 end
 
-complete -x -c gls -a '(__fish_git_list_commits)'
+complete -x -c gls -a '(__fish_git_complete_commits)'
