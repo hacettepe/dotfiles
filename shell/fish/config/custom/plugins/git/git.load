@@ -25,3 +25,11 @@ alias git-svn-dcommit-push='git svn dcommit; and git push github master:svntrunk
 
 alias gsr='git svn rebase'
 alias gsd='git svn dcommit'
+
+alias gls='git show'
+
+function __fish_git_list_commits
+    git log --pretty=format:%h\t%s -20
+end
+
+complete -x -c gls -a '(__fish_git_list_commits)'
