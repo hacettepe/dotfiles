@@ -12,16 +12,23 @@ end
 function fish_prompt
   set -l cyan (set_color -o cyan)
   set -l yellow (set_color -o yellow)
-  set -l red (set_color -o red)
+
+  if [ (id -u) = 0 ]
+    set primary (set_color -o red)
+    set secondary (set_color -o green)
+  else
+    set primary (set_color -o green)
+    set secondary (set_color -o red)
+  end
+
   set -l blue (set_color -o blue)
-  set -l green (set_color -o green)
   set -l normal (set_color normal)
 
-  set -l cwd $green(prompt_pwd)
+  set -l cwd $primary(prompt_pwd)
 
   if [ (_git_branch_name) ]
     set -l git_branch (_git_branch_name)
-    set git_info "$green$git_branch "
+    set git_info "$primary$git_branch "
 
     if [ (_is_git_dirty) ]
       set -l dirty "$yellow✗"
@@ -29,5 +36,5 @@ function fish_prompt
     end
   end
 
-  echo -n -s $cwd $red '|' $git_info $normal ⇒ ' ' $normal
+  echo -n -s $cwd $secondary '|' $git_info $blue ⇒ ' ' $normal
 end
