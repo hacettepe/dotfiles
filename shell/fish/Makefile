@@ -1,7 +1,7 @@
 all:
-	ln -sf $(PWD)/submodules/.oh-my-fish ~
-	ln -sf $(PWD)/config/custom ~/.config/fish
-	ln -sf $(PWD)/config/config.fish ~/.config/fish
+	ln -sfn $(PWD)/submodules/.oh-my-fish ~
+	ln -sfn $(PWD)/config/custom ~/.config/fish
+	ln -sfn $(PWD)/config/config.fish ~/.config/fish
 
 clean:
 	[ -f ~/.config/fish/custom ] || rm -f ~/.config/fish/custom
