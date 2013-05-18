@@ -38,6 +38,7 @@ function fish_prompt
       set git_info "$git_info$clean"
     end
   end
-
-  echo -n -s $cwd $secondary '|' $git_info $blue ⇒ ' ' $normal
+  set -l hostname '('(hostname)') '
+  set -l hostname "$blue$hostname"
+  echo -n -s $hostname $cwd $secondary '|' $git_info $blue ⇒ ' ' $normal
 end
