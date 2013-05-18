@@ -12,6 +12,7 @@ end
 function fish_prompt
   set -l cyan (set_color -o cyan)
   set -l yellow (set_color -o yellow)
+  set -l green (set_color -o green)
 
   if [ (id -u) = 0 ]
     set primary (set_color -o red)
@@ -33,6 +34,9 @@ function fish_prompt
     if [ (_is_git_dirty) ]
       set -l dirty "$yellow✗"
       set git_info "$git_info$dirty"
+    else
+      set -l clean "$green✔"
+      set git_info "$git_info$clean"
     end
   end
 
