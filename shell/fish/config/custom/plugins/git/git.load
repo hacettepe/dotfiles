@@ -19,6 +19,7 @@ alias ga='git add'
 alias gm='git merge'
 alias grh='git reset HEAD'
 alias grhh='git reset HEAD --hard'
+alias gdc='git diff --cached'
 
 # Git and svn mix
 alias git-svn-dcommit-push='git svn dcommit; and git push github master:svntrunk'
