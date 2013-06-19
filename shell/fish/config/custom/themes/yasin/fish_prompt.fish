@@ -42,3 +42,5 @@ function fish_prompt
   set -l hostname "$blue$hostname"
   echo -n -s $hostname $cwd $secondary '|' $git_info $blue ⇒ ' ' $normal
 end
+
+set fish_color_command ffd700
