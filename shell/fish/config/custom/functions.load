@@ -26,3 +26,7 @@ function .runsudo --description 'Run current command line as root'
 	commandline -i 'sudo '
 	commandline -C "$cursor_pos"
 end
+
+function cb
+	echo -n "$argv" | xclip -se c
+end

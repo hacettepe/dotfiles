@@ -9,3 +9,5 @@ alias ...='../../'
 alias psg="ps aux | grep"
 alias pu='pushd'
 alias po='popd'
+
+alias cbf='xclip -se c'
