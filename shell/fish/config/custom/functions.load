@@ -1,11 +1,13 @@
 function mfs
 	set host $argv[1]
 	set mpoint $argv[2];
+  set u $argv[3];
+  set pass $argv[4];
 	set port 22;
 
 	set volname (basename $mpoint)
 
-	sshfs -p $port $host $mpoint -oauto_cache,reconnect -o Ciphers=arcfour
+	sshfs $host $mpoint -oauto_cache,reconnect,idmap=user,dev,suid,ssh_command="sshpass -p$pass ssh -l $u" -o Ciphers=arcfour
 end
 
 function lsl
