@@ -1,2 +1,3 @@
 set -x EDITOR '/opt/sublime_text_3/sublime_text -w'
 set PATH $PATH '/usr/local/bin'
+set PATH $PATH '/mnt/storage/workspace/adt-bundle-linux-x86_64-20130717/sdk/tools/'

@@ -31,16 +31,16 @@ function fish_prompt
     set git_info "$cyan$git_branch "
 
     if [ (_is_git_dirty) ]
-      set -l dirty "$yellow✗"
+      set -l dirty "$yellow(x)"
       set git_info "$git_info$dirty"
     else
-      set -l clean "$green✔"
+      set -l clean "$green(ok)"
       set git_info "$git_info$clean"
     end
   end
   set -l hostname '('(hostname)') '
   set -l hostname "$blue$hostname"
-  echo -n -s $hostname $cwd $secondary '|' $git_info $blue ⇒ ' ' $normal
+  echo -n -s $hostname $cwd $secondary '|' $git_info $blue ' => ' $normal
 end
 
 set fish_color_command ffd700
