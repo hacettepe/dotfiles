@@ -3,6 +3,7 @@ alias cls="clear"
 alias haste="HASTE_SERVER=http://paste.elhan.org haste"
 
 alias lls='ls'
+alias l='ls'
 alias o='xdg-open'
 alias subl='/opt/sublime_text_3/sublime_text'
 alias ...='../../'
