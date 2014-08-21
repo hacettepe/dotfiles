@@ -1,3 +1,10 @@
-set -x EDITOR '/opt/sublime_text_3/sublime_text -w'
 set PATH $PATH '/usr/local/bin'
-set -xg _JAVA_OPTIONS '-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
+
+set PATH $PATH ~/prog/mongo/bin
+
+set -xg ANDROID_SDK ~/prog/adt
+set -xg ANDROID_HOME ~/prog/adt
+
+set PATH $PATH $ANDROID_SDK/tools $ANDROID_SDK/platform-tools ~/prog/gradle/bin
+
+set -xg PACKAGE_DIRS ~/code/meteor/packages
