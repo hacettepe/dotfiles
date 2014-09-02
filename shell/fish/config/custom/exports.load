@@ -8,3 +8,8 @@ set -xg ANDROID_HOME ~/prog/adt
 set PATH $PATH $ANDROID_SDK/tools $ANDROID_SDK/platform-tools ~/prog/gradle/bin
 
 set -xg PACKAGE_DIRS ~/code/meteor/packages
+
+set -xg JAVA_HOME (/usr/libexec/java_home -v '1.7*')
+set -xg JAVA_6_HOME (/usr/libexec/java_home -v '1.6*')
+set -xg JAVA_7_HOME (/usr/libexec/java_home -v '1.7*')
+set -xg JAVA_8_HOME (/usr/libexec/java_home -v '1.8*')
