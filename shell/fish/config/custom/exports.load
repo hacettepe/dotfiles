@@ -1,6 +1,7 @@
 set PATH $PATH '/usr/local/bin'
 
 set PATH $PATH ~/prog/mongo/bin
+set PATH $PATH /opt/local/bin
 
 set -xg ANDROID_SDK ~/prog/adt
 set -xg ANDROID_HOME ~/prog/adt
