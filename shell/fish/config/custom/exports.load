@@ -6,7 +6,7 @@ set PATH $PATH /opt/local/bin
 set -xg ANDROID_SDK ~/prog/adt
 set -xg ANDROID_HOME ~/prog/adt
 
-set PATH $PATH $ANDROID_SDK/tools $ANDROID_SDK/platform-tools ~/prog/gradle/bin
+set PATH $PATH $ANDROID_SDK/tools $ANDROID_SDK/build-tools $ANDROID_SDK/platform-tools ~/prog/gradle/bin
 
 set -xg PACKAGE_DIRS ~/code/meteor/packages
 
